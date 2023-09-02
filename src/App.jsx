@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import JumboTrone from "./components/Jumbotrone";
 import SoundSection from "./components/SoundSection";
 import DisplaySection from "./components/DisplaySection";
+import WebgiViewer from "./components/WebgiViewer";
 function App() {
   return (
    <div className="App">
@@ -9,6 +10,7 @@ function App() {
    <JumboTrone />
    <SoundSection />
    <DisplaySection />
+   <WebgiViewer />
    </div>
   );
 }
