@@ -1,13 +1,18 @@
 import React from "react";
 
-function DisplaySection(){
+function DisplaySection({triggerPreview}){
+    const handleOnTop=()=>{
+        window.scrollTo({
+            top:0,left:0,behavior:"smooth"
+        })
+    }
     return(
         <div className="display-section wrapper">
             <h2 className="title">New</h2>
             <p className="text">Brilliant</p>
             <span className="description">A display that is up to 2X brighter in the sun.</span>
-            <button className="button">Try me</button>
-            <button className="back-button">Top</button>
+            <button className="button" onClick={triggerPreview}>Try me</button>
+            <button className="back-button" onClick={handleOnTop}>Top</button>
         </div>
     )
 }
